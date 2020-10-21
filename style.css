@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300;400;500&family=Poppins:wght@200;300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: "Poppins", sans-serif;
+    --headline-font: "Piazzolla", sans-serif;
+}
+
+html,
+body {
+    font-size: 10px;
+    font-family: var(--main-font);
+    background-color: rgb(1, 1, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(img/header-bg.jpg), radial-gradient(ellipse at top, transparent 0 , rgb(17, 16, 16) 60%, black 70%, black 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 0rem;
+    align-items: center;
+    height: 20vh;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.fa-map-marker-alt {
+    font-size: 4.5rem;
+}
+
+.header-hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-headline {
+    font-size: 8rem;
+    color: white;
+    font-family: var(--headline-font);
+    position: absolute;
+    top: 14rem;
+    font-weight: 400;
+}
+
+.header-hero > p {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 24rem;
+}
+
+.fa-play-circle {
+    font-size: 9rem;
+    color: white;
+    font-weight: 100;
+    margin-top: 34rem;
+}
+
+/* EXPLORE THE WORLD */
+
+.explore-the-world {
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.explore-the-world-headline {
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.explore-the-world-text > p {
+    display: block;
+    width: 55%;
+    margin: 0 auto 3rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+
+}
+
+.explore-the-world-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-card,
+.second-card,
+.third-card {
+    width: 30%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: .1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+}
+
+.first-card {
+    background-image: url(img/explore-the-world-1.jpg);
+}
+
+.second-card {
+    background-image: url(img/explore-the-world-2.jpg);
+}
+
+.third-card {
+    background-image: url(img/explore-the-world-3.jpg);
+}
+
+.explore-the-world-cards p {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.449);
+}
+
+.explore-the-world-cards-headline {
+    font-size: 3rem;
+    font-family: var(--headline-font);
+    background-color: rgba(0, 0, 0, 0.449);
+}
+
+.explore-the-world a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: lightseagreen;
+    display: inline-block;
+    margin: 4rem 0;
+}
+
+/* THE JOURNAL */
+.the-journal {
+    color: #fff;
+    text-align: center;
+}
+.journal-cards {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.journal-card-img {
+    width: 40rem;
+    height: 25rem;
+    border-radius: .2rem
+}
+
+.left-card,
+.right-card {
+    width: 50%;
+    text-align: center;
+}
+
+.journal-text {
+    margin-bottom: 4rem;
+    width: 40%;
+    margin: 3rem auto 4rem;
+    font-size: 1.4rem
+}
+
+.journal-headline {
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.journal-desc {
+    width: 60%;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+}
+
+.journal-cards-headline {
+    font-size: 3rem;
+    font-family: var(--headline-font);
+    margin: 1.6rem 0;
+}
+
+.date {
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+    height: 80vh;
+    background: url(img/footer-bg.jpg), radial-gradient(ellipse at bottom, transparent 0 , rgb(17, 16, 16) 60%, black 70%, black 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.footer-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.separator {
+    margin: 0 3.5rem;
+}
+
+.footer-nav .nav-link {
+    text-transform: uppercase;
+}
+
+.footer-text span {
+    text-transform: uppercase;
+}
+
+.see-more {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: lightseagreen;
+    display: inline-block;
+    margin: 4rem 0;
+}
